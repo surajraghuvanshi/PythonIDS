@@ -1,0 +1,30 @@
+Dependency ==1 
+Flex 
+
+http://prdownloads.sourceforge.net/flex/flex-2.5.33.tar.gz?download
+
+tar -xvzf flex-2.5.33.tar.gz
+
+cd flex-2.5.33
+
+PATH=$PATH:/usr/local/m4/bin/
+
+
+./configure --prefix=/usr/local/flex
+
+sudo make
+
+sodo make install
+
+
+Dependency =2
+gcc compiler
+
+Defalutly available in all linux version
+
+
+Dependency ==3
+
+Libpcap
+
+

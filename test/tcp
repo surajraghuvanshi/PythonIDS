@@ -1,0 +1,8 @@
+$HOME_NET, any, -> $EXTERNAL_NET, any, msg:"Attack response command complete", content:"Command completed", sid:123456
+$HOME_NET, any, -> $EXTERNAL_NET, any, msg:"Attack response Command error", content:" Bad command or filename", sid:123457
+$EXTERNAL_NET, any, -> $HOME_NET, any, msg:"ATTACK-RESPONSES successful kadmind", content:"*GOBBLE*", sid:123458
+$EXTERNAL_NET, any, -> $HOME_NET, any, msg:"ATTACK-RESPONSES successful gobbles ssh exploit uname", content:"uname", sid:123459
+192.256.3.43, 8080, -> $HOME_NET , any, msg:"Attack successful by execute command", content:"command executed", sid:123460
+20.34.45.3, 80, -> 193.34.56.2, 23, msg:"telnet attack amy be going on", content:"telnet request", sid:123461
+$HOME_NET, 53, -> 76.23.42.43, any, msg:"next attack can be performed", content:"new type", sid:123462
+$HOME_NET, any, -> $EXTERNAL_NET, any, msg:"https attack can be performed", content:"|00 00 23 35 a3 a6|", sid:123463

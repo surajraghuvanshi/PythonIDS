@@ -1,0 +1,4 @@
+$HOME_NET any -> $EXTR_NET any sid:123456 msg:"Attack response command complete" content:"Command completed"
+$HOME_NET any -> $EXTR_NET any sid:123457 msg:"Attack response Command error" content:"Bad command or filename"
+$EXTR_NET any -> $HOME_NET any sid:123458 msg:"ATTACK-RESPONSES successful kadmind" content:"*GOBBLE*"
+$EXTR_NET any -> $HOME_NET any sid:123459 msg:"ATTACK-RESPONSES successful gobbles ssh exploit uname" content:"uname"
